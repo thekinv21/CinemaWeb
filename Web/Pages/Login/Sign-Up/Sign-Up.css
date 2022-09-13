@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("https://th.bing.com/th/id/R.0c9da50f700544e73269a1228e6d8dba?rik=gmCpmEn3J8Sk6g&pid=ImgRaw&r=0");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: center;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .form-box {
+  min-width: 30%;
+  min-height: 60vh;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0, 0.1);
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid beige;
+}
+
+.switch {
+  padding: 2rem 0rem 6rem 0rem;
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.switch li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.switch li a {
+  display: block;
+  height: 30px;
+  margin: 10px;
+  padding: 2px 25px;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+.switch li a:hover {
+  background-color: #fff;
+  color: black;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  color: beige;
+  margin-bottom: 1rem;
+}
+
+.title i {
+  padding-left: 10px;
+  font-size: large;
+  color: beige;
+}
+
+.container .form-box form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.input-container {
+  height: 30px;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.5px solid beige;
+  border-radius: 3px;
+  margin: 0.5rem 0rem 1.5rem 0rem;
+}
+
+.input-container i {
+  font-size: large;
+  cursor: pointer;
+  padding: 0rem 1rem 0rem 0.5rem;
+}
+.fa-eye {
+  cursor: pointer;
+  font-size: small;
+}
+
+.input-container input {
+  outline: none;
+  border: none;
+  background: transparent;
+  width: 80%;
+  height: 30px;
+}
+
+.agree {
+  margin: 1rem 0rem 2rem 0rem;
+  width: 60%;
+  display: flex;
+  justify-content: flex-start;
+  cursor: pointer;
+  
+}
+
+.agree small {
+  padding-left: 10px;
+}
+
+.agree small a {
+  text-decoration: none;
+  color: bisque;
+}
+
+.create {
+    width: 60%;
+    height: 30px;
+    background-color: red;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 3rem;
+
+}

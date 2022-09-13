@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #2e2e2e;
+  color: aliceblue;
+  background-image: url("https://th.bing.com/th/id/R.0c9da50f700544e73269a1228e6d8dba?rik=gmCpmEn3J8Sk6g&pid=ImgRaw&r=0");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: center;
+}
+
+.container {
+  background-color: rgb(0, 0, 0, 0.7);
+}
+
+/* ----------------------NAvbar start-------------------------*/
+
+.navbar {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 25px 100px;
+  /* background-color: rgb(5, 95, 5); */
+}
+
+.navbar .logo {
+  position: relative;
+  color: aliceblue;
+  font-size: 2em;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.6s;
+  text-transform: uppercase;
+}
+
+.navbar ul {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar li {
+  position: relative;
+  list-style: none;
+  margin: 0px 45px;
+}
+
+.navbar li a {
+  position: relative;
+  text-decoration: none;
+  color: aliceblue;
+  margin: 0px 5px;
+}
+
+.navbar li:hover {
+  border-bottom: 2px solid orange;
+}
+
+/*-----------------------HEADER START------------------------------*/
+
+.search-container {
+  /* background-color: rgb(5, 95, 5); */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 1064px;
+  padding-bottom: 30px;
+}
+
+.populer-filmler {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.populer-filmler i {
+  font-size: 24px;
+  padding-left: 10px;
+}
+
+.date-now {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.date-now i {
+  font-size: 24px;
+  padding-left: 10px;
+  margin-right: 20px;
+}
+
+/*------------------------Movie Container start------------------------*/
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0rem 5rem;
+  margin-top: 1.5rem;
+}
+
+.movie {
+  position: relative;
+  width: 300px;
+  margin: 0.5rem;
+  border-radius: 3px;
+  background: rgb(170, 51, 8);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.movie .movie-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: center;
+  padding: 0.5rem 1rem 0rem 1rem;
+  font-size: smaller;
+}
+
+.movie .movie-info span {
+  color: aliceblue;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: small;
+}
+
+.movie-info span.green {
+  color: greenyellow;
+}
+
+.movie-info span.red {
+  color: red;
+}
+
+.movie-info span.orange {
+  color: orange;
+}
+
+.movie .overview {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #292929;
+  padding: 1rem;
+  max-height: 100%;
+  transform: translateY(101%);
+  transition: transform 0.3 ease-in;
+  color: aliceblue;
+  font-size: smaller;
+}
+
+.ticket-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.satin-al {
+  width: 120px;
+  height: 30px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: green;
+  color: aliceblue;
+  border-radius: 5px;
+}
+
+.satin-al:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+.movie:hover .overview {
+  transform: translateY(0);
+}
+
+.movie img {
+  width: 100%;
+  border-radius: 5px 5px 0px 5px;
+}
+
+.movie img:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}

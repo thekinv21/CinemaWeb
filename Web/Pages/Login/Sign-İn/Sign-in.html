@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-in Page</title>
+    <!--------------------Css Link----------------------->
+    <link rel="stylesheet" href="./Sign-in.css" />
+    <!--------------------Font Awesome Link----------------------->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <!--------------------Favicon------------------------------>
+    <link rel="shortcut icon" href="/Web/Svg/cinema.jpg" type="image/x-icon" />
+
+    <!-----------------------Alerts---------------------------------------->
+
+    <link
+      href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css"
+      rel="stylesheet"
+    />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-box">
+        <ul class="switch">
+          <li id="sign-in"><a href="#">Sign in</a></li>
+          <li id="sign-up"><a href="#">Sign Up</a></li>
+        </ul>
+
+        <form action="" id="form">
+          <label for="uname">Username</label>
+
+          <div class="input-container">
+            <span> <i class="fa-solid fa-envelope"></i></span>
+            <input
+              type="text"
+              placeholder="E-mail"
+              id="username"
+              autocomplete="off"
+              required
+            />
+          </div>
+
+          <label for="uname">Password</label>
+
+          <div class="input-container">
+            <span> <i class="fa-solid fa-key"></i></span>
+            <input
+              type="password"
+              placeholder="Password"
+              id="password"
+              autocomplete="off"
+              required
+            />
+            <small id="showPassword" class="fa-solid fa-eye"></small>
+          </div>
+
+          <div class="remember-forgot">
+            <div>
+              <input type="checkbox" checked="true" />
+              <small> Remember Me</small>
+            </div>
+
+            <div>
+              <a href="#"><small>Forget Password ?</small></a>
+            </div>
+          </div>
+
+          <button class="submit">Login</button>
+
+          <div>
+            <small
+              >Not a mamber?
+              <a href="/Web/Pages/Login/Sign-Up/Sign-Up.html">Sign Up</a></small
+            >
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="/Web/Pages/Login/Javascript/Login.js"></script>
+  </body>
+</html>

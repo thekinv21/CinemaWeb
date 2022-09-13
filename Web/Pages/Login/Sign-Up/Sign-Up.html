@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-Up</title>
+    <!------------------Css Link---------------------->
+    <link rel="stylesheet" href="./Sign-Up.css" />
+    <!------------------Font Awesome------------------------------>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <!--------------------Favicon------------------------------>
+    <link rel="shortcut icon" href="/Web/Svg/cinema.jpg" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-box">
+        <ul class="switch">
+          <li id="sign-in"><a href="#">Sign in</a></li>
+          <li id="sign-up"><a href="#">Sign Up</a></li>
+        </ul>
+
+        <!-------------------------Title-------------------------------->
+        <span class="title"
+          >Registration Form <i class="fa-solid fa-id-card"></i
+        ></span>
+
+        <!-------------------------Regist Form-------------------------------------->
+        <form action="">
+          <div class="input-container">
+            <span> <i class="fa-solid fa-user"></i></span>
+            <input
+              type="text"
+              placeholder=" Enter Username"
+              id="username"
+              autocomplete="off"
+              required
+            />
+          </div>
+
+          <div class="input-container">
+            <span> <i class="fa-solid fa-envelope"></i></span>
+            <input
+              type="email"
+              placeholder=" Enter E-mail"
+              id="E-mail"
+              autocomplete="off"
+              required
+            />
+          </div>
+
+          <div class="input-container">
+            <span> <i class="fa-solid fa-key"></i></span>
+            <input
+              type="password"
+              placeholder=" Enter Password"
+              id="password"
+              autocomplete="off"
+              required
+            />
+            <small id="showPassword" class="fa-solid fa-eye"></small>
+          </div>
+
+          <div class="agree">
+            <input type="checkbox" checked />
+            <small>i agree to the <a href="#">Terms</a></small>
+          </div>
+
+          <button class="create">Create Account</button>
+        </form>
+      </div>
+    </div>
+    <script src="/Web/Pages/Login/Javascript/Login.js"></script>
+  </body>
+</html>

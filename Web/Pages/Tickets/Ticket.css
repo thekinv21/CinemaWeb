@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #2e2e2e;
+  color: aliceblue;
+  background-image: url("https://th.bing.com/th/id/R.0c9da50f700544e73269a1228e6d8dba?rik=gmCpmEn3J8Sk6g&pid=ImgRaw&r=0");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: center;
+}
+
+.container {
+  background-color: rgb(0,0,0,0.2);
+  width: 100vw;
+  height: 100vh;
+}
+
+/* ----------------------NAvbar start-------------------------*/
+
+.navbar {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 25px 100px;
+}
+
+.navbar .logo {
+  position: relative;
+  color: aliceblue;
+  font-size: 2em;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.6s;
+  text-transform: uppercase;
+}
+
+.navbar ul {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar li {
+  position: relative;
+  list-style: none;
+  margin: 0px 45px;
+}
+
+.navbar li a {
+  position: relative;
+  text-decoration: none;
+  color: aliceblue;
+  margin: 0px 5px;
+}
+
+.navbar li:hover {
+  border-bottom: 2px solid orange;
+}
+
+/*-----------------------Ticket Sorg Form------------------*/
+.ticket-container {
+  /* background-color: rgb(5, 95, 5); */
+  max-width: 980px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 80px auto;
+  border-radius: 5px;
+  color: #edf0f1;
+  background-color: rgb(0,0,0,0.7);
+}
+
+.ticket-search-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.ticket-search-title i {
+  font-weight: 600;
+  font-size: 25px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.ticket-search-inputs {
+  margin-top: 30px;
+}
+
+.ticket-search-inputs p,
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.myText {
+  width: 40%;
+  height: 30px;
+  outline: none;
+  border: none;
+  max-width: 100%;
+  max-height: 100%;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+
+.search {
+  width: 23%;
+  height: 30px;
+  outline: none;
+  border: none;
+  background-color: orangered;
+  color: aliceblue;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.search:hover {
+  transform: scale(1.1);
+  transition: 0.6s ease-in-out;
+}
+
+/*--------------------ticket container---------------------*/
+
+.ticket-bilgileri-container {
+  width: 100%;
+  padding: 20px 20px;
+  display: none;
+
+}
+
+.bilgiler-container {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  display: flex;
+  overflow: hidden;
+  border: 1px solid beige;
+}
+
+.ticket-bilgi-title {
+  font-weight: 500;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ticket-bilgi-title i {
+  padding-left: 10px;
+  color: beige;
+}
+
+.movie-Path-image {
+  width: 200px;
+  border-radius: 5px;
+  margin: 0rem 2rem;
+  object-fit: cover;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem;
+}
+
+.details div {
+  margin-bottom: 25px;
+}
+
+.details .title {
+  color: gold;
+  padding-right: 10px;
+}

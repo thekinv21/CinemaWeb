@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Details</title>
+    <!-------------Css link----------------------->
+    <link rel="stylesheet" href="./MovieDetail.css" />
+    <!-------------Font Awesome-------------------------------->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <!--------------------Favicon------------------------------>
+    <link rel="shortcut icon" href="/Web/Svg/cinema.jpg" type="image/x-icon" />
+    <!---------------------Alerts------------------------------>
+    <link
+      href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css"
+      rel="stylesheet"
+    />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+  </head>
+  <body>
+    <div class="movie-detail-container">
+      <div class="details-container">
+        <div class="container"><!----------Movie Details Js Codes---------------></div>
+        <!-------------------------- Fragman içerik----------------------------------------->
+        <div id="myNav" class="overlay">
+          <!-------------------------- Fragmanı Kapama Butonu------------------------------->
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content"><!--------------Js codes Fragman---------------></div>
+        </div>
+      </div>
+    </div>
+    <script src="./MovieDetail.js"></script>
+  </body>
+</html>

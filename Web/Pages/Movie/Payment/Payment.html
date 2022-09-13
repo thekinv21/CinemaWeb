@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+    <!----------------------Css Link--------------------------->
+    <link rel="stylesheet" href="./Payment.css" />
+    <!--------------------Font Awesome------------------------->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <!--------------------Favicon------------------------------>
+    <link rel="shortcut icon" href="/Web/Svg/cinema.jpg" type="image/x-icon" />
+  
+    <!-----------------------Alerts---------------------------------------->
+
+    <link
+      href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css"
+      rel="stylesheet"
+    />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+  </head>
+  <body>
+
+    <div class="payment-container">
+         <!--------------------Create Form------------------------->
+        <form action="" class="container">
+            <!--------------------Create title------------------------->
+            <div class="payment-title">
+                <h1>Payment</h1>
+                <i class="fa-solid fa-credit-card"></i>
+            </div>
+            <div class="payment-bank-kredi-kart">
+                <input
+                  class="banka-kart"
+                  type="text"
+                  placeholder="Banka / Kredi Kartı"
+                  readonly
+                />
+              </div>
+               <!--------------------Create Payment İmage------------------------->  
+              <div class="payment-bank-kredi-kart">
+                <img
+                  class="banks-icon"
+                  src="https://s3.eu-central-1.amazonaws.com/static.obilet.com/images/web/cards-782.png"
+                  alt="banka-kart"
+                />
+              </div>
+
+               <!--------------------Create İnputs------------------------->
+              <span>First Name</span>
+              <div class="payment-kart">
+                <input
+                
+                  class="kredi-kart"
+                  id="first-name"
+                  type="text"
+                  placeholder="Enter Name"
+                  autocomplete="off"
+                  required
+    
+                />
+              </div>
+
+              <span>Last Name</span>
+              <div class="payment-kart">
+                <input
+                  class="kredi-kart"
+                  id="last-name"  
+                  type="text"
+                  placeholder="Enter Surname"
+                  maxlength="16"
+                  autocomplete="off"
+                  required
+ 
+                />
+              </div>
+
+              <span>Kart Numarası</span> 
+              <div class="payment-kart">
+                <input
+                  class="kredi-kart"
+                  id="kart-numara"
+                  type="text"
+                  placeholder="xxxx xxxx xxxx xxxx"
+                  maxlength="16"
+                  autocomplete="off"
+                  required
+                />
+              </div>
+              <span>Son Kullanım Tarihi</span>
+            
+              <div class="payment-kart">
+                <input
+                  class="kredi-kart"
+                  id="son-kullanim-tarihi"
+                  type="text"
+                  placeholder="10/2023"
+                  maxlength="7"
+                  autocomplete="off"
+                  required
+             
+                />
+              </div>
+          
+              <span>Cvc</span>
+              <div class="payment-kart">
+                <input
+                  class="kredi-kart"
+                  id="cvc"
+                  type="text"
+                  placeholder="Cvc"
+                  maxlength="3"
+                  required
+              
+                />
+              </div>
+               <!--------------------Create Payment Button------------------------->    
+              <div class="payment-btn">
+                <button class="payment-button">
+                   <i class="fa-solid fa-credit-card"></i>
+                    Güvenli Şekilde Ödeme Yap
+                  </button>
+              </div>      
+            </div>
+        </form>
+    </div>
+
+    <script src="./Payment.js"></script>
+  </body>
+</html>

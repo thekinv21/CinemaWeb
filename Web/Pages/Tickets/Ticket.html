@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ticket</title>
+    <!-----------------Css Link------------------------------->
+    <link rel="stylesheet" href="./Ticket.css" />
+    <!--------------------Favicon----------------------------->
+    <link
+      rel="shortcut icon"
+      href="/Web/Svg/pexels-tima-miroshnichenko-7991161.jpg"
+      type="image/x-icon"
+    />
+    <!-------------Font Awesome-------------------------------->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <!---------------------Alerts------------------------------>
+    <link
+      href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css"
+      rel="stylesheet"
+    />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!--------------------Navbar start-------------------------->
+      <div class="navbar">
+        <a href="/Web/Pages/Home/Home.html" class="logo">CİNEMA</a>
+        <ul>
+          <li>
+            <i class="fa-solid fa-fire"></i>
+            <a href="/Web/Pages/Movie/Vizion/Vizion.html">VİZİYONDAKİLER</a>
+          </li>
+    
+          <li>
+            <i class="fa fa-ticket"></i>
+            <a href="/Web/Pages/Tickets/Ticket.html">BİLETLER</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-address-card"></i>
+            <a href="/Web/Pages/About/About.html">HAKKIMIZDA</a>
+          </li>
+          <li>
+            <i class="fa fa-fw fa-user"></i>
+            <a href="#" onclick="logOut()">ÇIKIŞ</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-------------------- Ticket Sorgu Form------------------------>
+      <div class="ticket-container">
+        <div class="ticket-search-title">
+      
+          <h2>Bilet İşlemleri</h2>
+            <i class="fa-solid fa-ticket"></i>
+        </div>
+
+        <div class="ticket-search-inputs">
+          <p>Buradan Biletinizin Detaylarına Bakabilirsiniz!</p>
+
+          <form>
+            <input
+              class="myText"
+              type="text"
+              id="name"
+              placeholder="Person Name"
+              autocomplete="off"
+
+            />
+            <input
+              id="surname"
+              class="myText"
+              type="text"
+              placeholder="Person Surname"
+              autocomplete="off"
+         
+            />
+            <button class="search">Bilet Ara</button>
+          </form>
+          <!---------------------Ticket bilgiler---------------------->
+          <div class="ticket-bilgileri-container">
+            <div class="bilgiler-container">
+              <div>
+                <img class="movie-Path-image" alt="myMovie">
+              </div>
+              <div class="details">
+                <div>
+                  <small class="title">Fullname :  </small>
+                  <small class="fullname"></small>
+                </div>
+                <div>
+                  <small class="title">Movie:  </small>
+                  <small class="movieTitle"></small>
+                </div>
+                <div>
+                  <small class="title">Language:  </small>
+                  <small class="movieLanguage"></small>
+                </div>
+                <div>
+                  <small class="title">Rating :  </small>
+                  <small class="movieRating"></small>
+                </div>
+                <div>
+                  <small class="title">Release Date:  </small>
+                  <small class="release-date"></small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    <script src="./Ticket.js"></script>
+  </body>
+</html>

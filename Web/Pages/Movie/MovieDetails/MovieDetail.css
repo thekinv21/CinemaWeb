@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #2e2e2e;
+  color: aliceblue;
+  background-image: url("https://th.bing.com/th/id/R.0c9da50f700544e73269a1228e6d8dba?rik=gmCpmEn3J8Sk6g&pid=ImgRaw&r=0");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: center;
+}
+
+/*----------------Movie Container-----------------*/
+
+.movie-detail-container {
+  width: 100vw;
+  height: 100vh;
+  min-width: 1064px;
+  min-height: 800px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/*----------------Movie Details Container-----------------*/
+.details-container {
+  position: relative;
+  min-height: 100vh;
+  min-width: 100%;
+  overflow-x: hidden;
+}
+
+/*----------------Movie Container Background-----------------*/
+
+.container {
+  position: relative;
+  z-index: 1;
+  min-width: 1064px;
+  min-height: 80%;
+  padding: 10rem 30rem;
+  display: flex;
+}
+
+.container .path {
+  width: 350px;
+  height: 530px;
+  object-fit: contain;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.details {
+  padding-left: 5rem;
+}
+
+.movie-title,
+.release-date,
+.vote_average,
+.sure,
+.overview {
+  margin-bottom: 10px;
+}
+
+.title {
+  color: gold;
+}
+
+.buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.buttons .buyButton {
+  height: 48px;
+  width: 185px;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: darkgreen;
+  color: aliceblue;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+
+.buyButton:hover {
+  transition: all 0.3s ease;
+  transform: scale(1.1);
+}
+
+.buttons .fragmanButton {
+  height: 48px;
+  width: 185px;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+  background: orangered;
+  color: aliceblue;
+  border: none;
+  margin-left: 30px;
+}
+
+.fragmanButton:hover {
+  transition: all 0.3s ease;
+  transform: scale(1.1);
+}
+
+.buttons .cancelButton {
+  height: 48px;
+  width: 185px;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: darkred;
+  color: aliceblue;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  margin-left: 30px;
+}
+
+.cancelButton:hover {
+  transition: all 0.3s ease;
+  transform: scale(1.1);
+}
+
+/*-----------------------Fragman--------------------------*/
+
+.overlay {
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 15%;
+  width: 100%;
+  text-align: center;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: aliceblue;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}

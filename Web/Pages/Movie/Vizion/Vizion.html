@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vizions Movies</title>
+    <!-----------------Css Link------------------------------->
+    <link rel="stylesheet" href="./Vizion.css" />
+    <!--------------------Favicon----------------------------->
+    <link
+      rel="shortcut icon"
+      href="/Web/Svg/pexels-tima-miroshnichenko-7991161.jpg"
+      type="image/x-icon"
+    />
+    <!-------------Font Awesome-------------------------------->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <!---------------------Alerts------------------------------>
+    <link
+      href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css"
+      rel="stylesheet"
+    />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!--------------------Navbar start-------------------------->
+      <div class="navbar">
+        <a href="/Web/Pages/Home/Home.html" class="logo">CİNEMA</a>
+
+        <ul>
+          <li>
+            <i class="fa-solid fa-fire"></i>
+            <a href="/Web/Pages/Movie/Vizion/Vizion.html">VİZİYONDAKİLER</a>
+          </li>
+          <li>
+            <i class="fa fa-ticket"></i>
+            <a href="/Web/Pages/Tickets/Ticket.html">BİLETLER</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-address-card"></i>
+            <a href="/Web/Pages/About/About.html">HAKKIMIZDA</a>
+          </li>
+          <li>
+            <i class="fa fa-fw fa-user"></i>
+            <a href="#" onclick="logOut()">ÇIKIŞ</a>
+          </li>
+        </ul>
+      </div>
+      <!-----------------------------Header start----------------------->
+      <div class="search-container">
+        <div class="populer-filmler">
+          <h2>ON THE VIZION</h2>
+          <i class="fa-solid fa-video"></i>
+        </div>
+
+        <div class="date-now">
+          <h2>Today</h2>
+          <i class="fa-solid fa-calendar"></i>
+          <span class="tarih"><!------Today date------></span>
+        </div>
+      </div>
+      <!------------------------Film Container start------------------------------->
+      <main id="new-films">
+        <!-------Js code here all films container------>
+      </main>
+    </div>
+
+    <script src="./Vizion.js"></script>
+  </body>
+</html>
